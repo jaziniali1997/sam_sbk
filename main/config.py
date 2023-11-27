@@ -1,0 +1,5 @@
+from main import setting
+
+SQLALCHEMY_DATABASE_URL = setting.SQLALCHEMY_DATABASE_URL
+
+SECRET_KEY = setting.SECRET_KEY
