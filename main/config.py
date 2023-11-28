@@ -3,3 +3,6 @@ from main import setting
 SQLALCHEMY_DATABASE_URL = setting.SQLALCHEMY_DATABASE_URL
 
 SECRET_KEY = setting.SECRET_KEY
+
+START_DATE = setting.START_DATE
+END_DATE = setting.END_DATE
