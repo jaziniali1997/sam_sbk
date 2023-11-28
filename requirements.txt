@@ -6,6 +6,8 @@ fastapi==0.104.1
 greenlet==3.0.1
 h11==0.14.0
 idna==3.6
+jdatetime==4.1.1
+psycopg2==2.9.9
 pydantic==2.5.2
 pydantic-settings==2.1.0
 pydantic_core==2.14.5
