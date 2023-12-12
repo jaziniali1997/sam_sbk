@@ -64,6 +64,6 @@ class hourly_data_schemas(BaseModel):
 
 
 class hourly_output_schemas(BaseModel):
-    date: date
+    date: datetime
     date_shamsi: str
     result: List[hourly_data_schemas]
