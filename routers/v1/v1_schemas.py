@@ -32,3 +32,36 @@ class daily_data_schemas(BaseModel):
 class daily_output_schemas(BaseModel):
     date: date
     result: List[daily_data_schemas]
+class hourly_data_schemas(BaseModel):
+    loc_id: int
+    date: datetime
+    local_date: datetime
+    sunrise_local: datetime
+    sunset_local: datetime
+    day_duration: float
+    dd_10m: int
+    ff_10m: float
+    tcc: int
+    t2m: float
+    d2m: float
+    tp: float
+    e: float
+    fg10: float
+    pev: float
+    sd: float
+    sde: float
+    sf: float
+    skt: float
+    smlt: float
+    snowc: int
+    ssr: float
+    ssrd: float
+    rh2m: int
+    ws: str
+    sshn: float
+
+
+class hourly_output_schemas(BaseModel):
+    date: date
+    date_shamsi: str
+    result: List[hourly_data_schemas]
