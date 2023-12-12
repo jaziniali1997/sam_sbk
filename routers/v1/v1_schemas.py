@@ -1,13 +1,13 @@
 from pydantic import BaseModel
 from datetime import datetime, date
+from typing import List
 
 
-class hourly_schemas(BaseModel):
+class hourly_input_schemas(BaseModel):
     date: datetime
 
 
-class daily_schemas(BaseModel):
-    date: dateclass daily_input_schemas(BaseModel):
+class daily_input_schemas(BaseModel):
     date: date
 
 
@@ -32,6 +32,8 @@ class daily_data_schemas(BaseModel):
 class daily_output_schemas(BaseModel):
     date: date
     result: List[daily_data_schemas]
+
+
 class hourly_data_schemas(BaseModel):
     loc_id: int
     date: datetime

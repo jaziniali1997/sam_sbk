@@ -45,7 +45,6 @@ class hd_daily_sbk(Base):
     t2m_dm = Column(Float)
     t2m_dmax = Column(Float)
     t2m_dmin = Column(Float)
-    ff_10m_dmax = Column(Float)
     d2m_dm = Column(Float)
     tp_dsum = Column(Float)
     ssrd_dsum = Column(Float)
